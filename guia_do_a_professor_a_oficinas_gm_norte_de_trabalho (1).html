@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Guia do(a) Professor(a) – Oficinas (multi‑espaços)</title>
+<style>
+  :root{
+    --bg:#0b0f17;           /* fundo escuro elegante */
+    --card:#121826;         /* cartões */
+    --muted:#9aa4b2;        /* texto secundário */
+    --text:#e5e7eb;         /* texto principal */
+    --brand:#59d185;        /* acentos */
+    --brand-2:#61aaff;      /* acentos 2 */
+    --danger:#ff6b6b;
+    --ok:#73f3c4;
+    --warn:#ffd166;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+    color:var(--text);
+    background: radial-gradient(1200px 800px at 10% -10%, #15243a 0%, transparent 55%),
+               radial-gradient(900px 600px at 90% 0%, #1a153a 0%, transparent 55%),
+               var(--bg);
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:32px}
+  header{
+    display:grid;gap:16px;align-items:center;justify-items:start;margin-bottom:22px
+  }
+  .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;background:rgba(97,170,255,.12);color:#cfe1ff;border:1px solid rgba(97,170,255,.25);font-weight:600;font-size:12px;letter-spacing:.3px;text-transform:uppercase}
+  h1{font-size: clamp(26px, 3.6vw, 40px);margin:8px 0 0 0;line-height:1.15}
+  .sub{color:var(--muted)}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:26px 0}
+  .card{
+    background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:var(--radius);
+    padding:18px 18px 16px;
+    box-shadow:var(--shadow);
+    position:relative;
+    overflow:hidden;
+  }
+  .card h3{margin:0 0 10px;font-size:18px}
+  .card p{margin:6px 0}
+  .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border-radius:999px;background:rgba(89,209,133,.12);border:1px solid rgba(89,209,133,.3);color:#b9f3d5;font-size:12px;font-weight:600;letter-spacing:.2px}
+  .pill.warn{background:rgba(255,209,102,.12);border-color:rgba(255,209,102,.35);color:#ffe4a3}
+  .pill.danger{background:rgba(255,107,107,.12);border-color:rgba(255,107,107,.35);color:#ffb3b3}
+
+  .kpi{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
+  .kpi div{flex:1 1 160px;background:#0e1422;border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:12px}
+  .kpi strong{display:block;font-size:22px}
+  .muted{color:var(--muted)}
+  .list{margin:6px 0 0 0;padding:0 0 0 18px}
+  .list li{margin:6px 0}
+
+  .step{display:flex;gap:12px;align-items:flex-start;margin:8px 0}
+  .step .dot{width:10px;height:10px;border-radius:50%;margin-top:8px;background:var(--brand)}
+  .step .txt{flex:1}
+
+  .section{margin:30px 0}
+  .section h2{font-size:20px;margin:0 0 12px}
+
+  .template{
+    background: linear-gradient(180deg, rgba(97,170,255,.06), rgba(97,170,255,0));
+    border:1px dashed rgba(97,170,255,.35);
+    border-radius:16px;
+    padding:16px;
+  }
+  input, textarea{width:100%;background:#0d1422;border:1px solid rgba(255,255,255,.08);color:var(--text);border-radius:12px;padding:10px 12px}
+  textarea{min-height:110px}
+  label{font-size:12px;color:var(--muted);display:block;margin:10px 0 6px}
+
+  .footer{margin-top:28px;color:var(--muted);font-size:13px}
+  .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:12px}
+  .hr{height:1px;background:linear-gradient(90deg, transparent, rgba(255,255,255,.15), transparent);margin:16px 0}
+
+  @media print{
+    body{background:white;color:#222}
+    .card{box-shadow:none;border:1px solid #ccc}
+    .badge{background:#eaf3ff;color:#173b6d;border-color:#9ec0ff}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="badge">Guia do(a) Professor(a) – Oficinas (multi‑espaços)</span>
+      <h1>Norte de trabalho para cada docente</h1>
+      <p class="sub">Este guia reúne <strong>apenas</strong> o que cabe a cada professor(a) responsável por uma oficina em sala. Metodologias variam por espaço: ver modalidades abaixo. Disponibilidade: <strong>Dia 13 (montagem)</strong> e <strong>Dia 14 (execução)</strong>. Carga de referência: <strong>16h</strong> (planejamento + montagem + execução). <strong>Remuneração:</strong> <u>TETO de R$ 672,00</u> para 16h; valores <strong>proporcionais</strong> em casos de menor disponibilidade.</p>
+      <div class="kpi">
+        <div>
+          <span class="muted">Sua oficina</span>
+          <strong>1 sala / 1 docente</strong>
+          <span class="muted">Planeje do início ao fim</span>
+        </div>
+        <div>
+          <span class="muted">Metodologia</span>
+          <strong>Rotação por estações</strong>
+          <span class="muted">Fluxo, tempo e segurança</span>
+        </div>
+        <div>
+          <span class="muted">Prazos</span>
+          <strong>13 & 14 (Mês/Local)</strong>
+          <span class="muted">Tudo funcional no dia 14</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="section">
+      <h2>Modalidades por espaço</h2>
+      <div class="card">
+        <ul class="list">
+          <li><strong>Guarda Mirim (GM):</strong> rotação por estações utilizando <strong>4 salas sob nossa responsabilidade</strong> (mais 1 da instituição).</li>
+          <li><strong>Epesmel:</strong> apresentação dos trabalhos em <strong>formato de feira</strong>, no pátio da instituição.</li>
+          <li><strong>Centro Cultural Zona Norte</strong> e <strong>Eletro/CRC‑PR:</strong> dinâmicas específicas a definir; aplicar este guia <em>no que couber</em> (planejamento, montagem, entregáveis e relatório).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <h3>1) Planejamento didático (pré‑evento)</h3>
+        <span class="pill">Responsabilidade direta do(a) docente</span>
+        <ul class="list">
+          <li>Definir <strong>título</strong>, <strong>objetivo</strong> e <strong>competências</strong> da oficina (alinhadas às demais, sem sobreposição).</li>
+          <li>Estruturar o <strong>roteiro por estações</strong>: etapas, tempos por rodada, produto/resultado esperado.</li>
+          <li>Preencher e enviar o <strong>Resumo da Oficina</strong> (template abaixo) no prazo combinado.</li>
+          <li>Listar <strong>materiais/insumos</strong> e solicitar aquisição/alocação (com antecedência).</li>
+          <li>Prever <strong>acessibilidade</strong> e <strong>segurança</strong> (uso de equipamentos, regras claras aos estudantes).</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>2) Montagem e testes – Dia 13</h3>
+        <span class="pill warn">Obrigatório estar presente</span>
+        <ul class="list">
+          <li>Montar <strong>layout da sala</strong>, sinalização de fluxo e estações.</li>
+          <li>Testar <strong>energia</strong>, <strong>extensões/benjamins</strong>, <strong>projetor/TV</strong>, <strong>internet</strong> (se aplicável).</li>
+          <li>Ensaiar o <strong>cronograma de rotação</strong> com tempos e transições.</li>
+          <li>Conferir <strong>checklist de materiais</strong> e preparar kits por estação.</li>
+          <li>Registrar <strong>planos B</strong> (ex.: falta de equipamento, queda de internet).</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>3) Execução da oficina – Dia 14</h3>
+        <span class="pill">Condução integral da sua sala</span>
+        <ul class="list">
+          <li>Realizar <strong>acolhida breve</strong> e instruções (regras, segurança, objetivos, tempo por estação).</li>
+          <li>Conduzir as <strong>rodadas cronometradas</strong> da rotação, mantendo ritmo e clareza.</li>
+          <li>Oferecer <strong>feedback objetivo</strong> e orientar a produção/registro dos estudantes.</li>
+          <li>Finalizar com <strong>sintese</strong> (o que foi aprendido, conexões com outras oficinas).</li>
+          <li>Preencher <strong>rubrica simples</strong> ou checklist de observação (para relatório).</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h3>4) Entregáveis do(a) professor(a)</h3>
+        <span class="pill">Envio dentro dos prazos</span>
+        <ul class="list">
+          <li><strong>Resumo da Oficina</strong> (1 página) com título, objetivo, competências, estações, tempos, materiais e produto final.</li>
+          <li><strong>Mapa de sala</strong> e <strong>fluxo de rotação</strong> (desenho simples ou bullet points).</li>
+          <li><strong>Checklist de materiais</strong> por estação (o que é da organização e o que é pessoal).</li>
+          <li><strong>Rubrica de avaliação</strong> (máx. 5 critérios, linguagem simples, observável).</li>
+          <li><strong>Relatório breve pós‑atividade</strong> (o que funcionou, ajustes, riscos). </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="section">
+      <h2>Template – Resumo da Oficina (preencher e enviar)</h2>
+      <div class="template">
+        <label for="titulo">Título da oficina</label>
+        <input id="titulo" placeholder="Ex.: Protótipos rápidos com materiais acessíveis" />
+
+        <label for="objetivo">Objetivo (1–2 frases)</label>
+        <textarea id="objetivo" placeholder="Ex.: Desenvolver, em rotação por estações, protótipos simples que resolvam problemas do cotidiano, exercitando planejamento, criatividade e trabalho em equipe."></textarea>
+
+        <label for="competencias">Competências (3–5)</label>
+        <textarea id="competencias" placeholder="Ex.: pensamento crítico; resolução de problemas; colaboração; comunicação; responsabilidade no uso de equipamentos."></textarea>
+
+        <label for="estacoes">Estações & tempos (descrição objetiva)</label>
+        <textarea id="estacoes" placeholder="Ex.: Estação 1 (12 min): briefing e esboço / Estação 2 (12 min): montagem / Estação 3 (12 min): testes / Estação 4 (12 min): registro & apresentação relâmpago."></textarea>
+
+        <label for="materiais">Materiais/insumos por estação</label>
+        <textarea id="materiais" placeholder="Liste itens, quantidades e observações (tomadas, extensões, EPI, etc.)"></textarea>
+
+        <label for="produto">Produto/resultado esperado</label>
+        <textarea id="produto" placeholder="Ex.: Protótipo funcional + foto/registro + frase de síntese pelo grupo."></textarea>
+
+        <label for="seguranca">Segurança & acessibilidade</label>
+        <textarea id="seguranca" placeholder="Regras de uso, adaptações necessárias, alternativa sem risco se faltar equipamento."></textarea>
+
+        <label for="rubrica">Rubrica simples (até 5 critérios)</label>
+        <textarea id="rubrica" placeholder="Ex.: participação; cooperação; cumprimento de etapas; cuidado com materiais; clareza na apresentação."></textarea>
+
+        <label for="observacoes">Observações</label>
+        <textarea id="observacoes" placeholder="Detalhes que a coordenação precise saber."></textarea>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Checklist pessoal do(a) docente</h2>
+      <div class="card">
+        <div class="step"><span class="dot"></span><div class="txt"><strong>Antes do dia 13:</strong> enviar Resumo da Oficina; confirmar materiais; alinhar com a coordenação para evitar sobreposição temática.</div></div>
+        <div class="step"><span class="dot"></span><div class="txt"><strong>Dia 13 (montagem):</strong> montar sala, testar tudo, ensaiar tempos e transições; deixar plano B pronto.</div></div>
+        <div class="step"><span class="dot"></span><div class="txt"><strong>Dia 14 (execução):</strong> acolhida objetiva, condução das estações no tempo, fechamento com síntese e preenchimento da rubrica.</div></div>
+        <div class="step"><span class="dot"></span><div class="txt"><strong>Pós‑atividade:</strong> enviar relatório breve com pontos fortes, ajustes e riscos observados.</div></div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <p class="footer">Dúvidas rápidas e alinhamentos: <span class="mono">(coordenação) – disponível para conversar</span>. Lembrete: <strong>pontualidade, clareza e confiabilidade</strong> são essenciais para o sucesso coletivo.</p>
+  </div>
+</body>
+</html>
